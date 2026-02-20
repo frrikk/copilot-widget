@@ -1,0 +1,21 @@
+/*
+ * Default theme for @enova/copilot-widget
+ *
+ * Override any of these CSS custom properties on the host element:
+ *
+ * copilot-widget {
+ *   --copilot-primary: #00543e;
+ *   --copilot-bg: #ffffff;
+ *   --copilot-font: 'Inter', sans-serif;
+ *   --copilot-radius: 8px;
+ *   --copilot-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+ * }
+ */
+
+:root {
+  --copilot-primary: #0078d4;
+  --copilot-bg: #ffffff;
+  --copilot-font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --copilot-radius: 8px;
+  --copilot-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copilot Widget — Vanilla HTML</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        background: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 2rem;
+      }
+      .container {
+        width: 100%;
+        max-width: 480px;
+        height: 600px;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+      }
+
+      /* Theme the web component via CSS custom properties */
+      copilot-widget {
+        --copilot-primary: #00543e;
+        --copilot-bg: #ffffff;
+        --copilot-font: "Inter", system-ui, sans-serif;
+        --copilot-radius: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!--
+        Replace the token-endpoint with your actual backend URL.
+        The backend should use createTokenHandler or createTokenMiddleware
+        from @enova/copilot-widget/server.
+      -->
+      <copilot-widget
+        token-endpoint="https://your-api.example.com/api/copilot/token"
+      ></copilot-widget>
+    </div>
+
+    <!--
+      In production, you'd load this from a CDN or your bundled assets.
+      For local testing, point to the built dist file:
+    -->
+    <script type="module">
+      import "../../dist/web-component.js";
+    </script>
+  </body>
+</html>
