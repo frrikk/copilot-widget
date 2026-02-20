@@ -1,6 +1,6 @@
 "use client";
 
-import { CopilotProvider } from "@tieto/copilot-widget";
+import { CopilotProvider } from "copilot-widget";
 import { ChatWidget } from "./components/ChatWidget";
 
 export default function Home() {

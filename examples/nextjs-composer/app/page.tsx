@@ -6,7 +6,7 @@ import {
   useCopilot,
   useCopilotActivity,
   type Activity,
-} from "@tieto/copilot-widget";
+} from "copilot-widget";
 import { CopilotComposer } from "./components/CopilotComposer";
 
 // Import WebChat hooks — available inside CopilotComposer

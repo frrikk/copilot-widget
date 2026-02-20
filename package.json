@@ -1,5 +1,5 @@
 {
-  "name": "@tieto/copilot-widget",
+  "name": "copilot-widget",
   "version": "0.1.0",
   "description": "Minimal, customizable Copilot Studio widget — React components, web component, and headless hooks",
   "type": "module",

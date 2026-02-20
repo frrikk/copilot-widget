@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, type ReactNode } from "react";
-import { useCopilotContext } from "@tieto/copilot-widget";
+import { useCopilotContext } from "copilot-widget";
 
 /**
  * CopilotComposer — Mode B reference implementation.

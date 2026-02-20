@@ -3,7 +3,7 @@
 A plain React + Vite app using the headless `useCopilot` hook.
 
 > **Note:** This example requires a separate backend to serve the token endpoint.
-> You can use the Express middleware from `@tieto/copilot-widget/server` or
+> You can use the Express middleware from `copilot-widget/server` or
 > point `tokenEndpoint` to your existing backend.
 
 ## Setup

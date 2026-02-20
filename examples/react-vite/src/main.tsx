@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { CopilotProvider } from "@tieto/copilot-widget";
+import { CopilotProvider } from "copilot-widget";
 import { ChatWidget } from "./components/ChatWidget";
 
 function App() {
