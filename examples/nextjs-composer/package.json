@@ -7,7 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "copilot-widget": "file:../../",
+    "@frikkdev/copilot-widget": "file:../../",
     "botframework-webchat": "^4.17.0",
     "next": "^15.0.0",
     "react": "^18.2.0",

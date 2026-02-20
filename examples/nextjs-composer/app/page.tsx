@@ -6,7 +6,7 @@ import {
   useCopilot,
   useCopilotActivity,
   type Activity,
-} from "copilot-widget";
+} from "@frikkdev/copilot-widget";
 import { CopilotComposer } from "./components/CopilotComposer";
 
 // Import WebChat hooks — available inside CopilotComposer

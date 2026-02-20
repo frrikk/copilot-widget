@@ -12,6 +12,6 @@ No build step required — just serve the HTML file.
 ## Usage
 
 ```html
-<script src="path/to/copilot-widget/dist/web-component.js"></script>
+<script src="path/to/@frikkdev/copilot-widget/dist/web-component.js"></script>
 <copilot-widget token-endpoint="https://your-api.example.com/api/copilot/token"></copilot-widget>
 ```

@@ -53,7 +53,7 @@ class CopilotWidgetElement extends HTMLElement {
     shadow.appendChild(style);
 
     this.mountPoint = document.createElement("div");
-    this.mountPoint.className = "copilot-widget-root";
+    this.mountPoint.className = "@frikkdev/copilot-widget-root";
     shadow.appendChild(this.mountPoint);
 
     this.root = createRoot(this.mountPoint);
@@ -108,7 +108,7 @@ class CopilotWidgetElement extends HTMLElement {
 }
 
 // Register the custom element
-export function register(tagName = "copilot-widget") {
+export function register(tagName = "@frikkdev/copilot-widget") {
   if (!customElements.get(tagName)) {
     customElements.define(tagName, CopilotWidgetElement);
   }

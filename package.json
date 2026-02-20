@@ -1,5 +1,5 @@
 {
-  "name": "copilot-widget",
+  "name": "@frikkdev/copilot-widget",
   "version": "0.1.0",
   "description": "Minimal, customizable Copilot Studio widget — React components, web component, and headless hooks",
   "type": "module",
@@ -30,8 +30,21 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frrikk/copilot-widget.git"
+  },
+  "keywords": [
+    "copilot",
+    "copilot-studio",
+    "webchat",
+    "directline",
+    "react",
+    "web-component"
+  ],
   "peerDependencies": {
     "botframework-webchat": "^4.17.0",
     "react": "^18.0.0 || ^19.0.0",

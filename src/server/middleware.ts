@@ -5,7 +5,7 @@ import { generateToken, type GenerateTokenOptions } from "./token";
  *
  * Usage in `app/api/copilot/token/route.ts`:
  * ```ts
- * import { createTokenHandler } from 'copilot-widget/server';
+ * import { createTokenHandler } from '@frikkdev/copilot-widget/server';
  * export const POST = createTokenHandler({ secret: process.env.COPILOT_SECRET! });
  * ```
  */
@@ -33,7 +33,7 @@ export function createTokenHandler(options: GenerateTokenOptions) {
  *
  * Usage:
  * ```ts
- * import { createTokenMiddleware } from 'copilot-widget/server';
+ * import { createTokenMiddleware } from '@frikkdev/copilot-widget/server';
  * app.post('/api/copilot/token', createTokenMiddleware({ secret: process.env.COPILOT_SECRET! }));
  * ```
  */

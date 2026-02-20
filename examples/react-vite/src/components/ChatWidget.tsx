@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { useCopilotContext } from "copilot-widget";
+import { useCopilotContext } from "@frikkdev/copilot-widget";
 
 /**
  * ChatWidget — Mode A reference implementation.

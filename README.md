@@ -66,9 +66,9 @@ examples/
 
 | Export | What it provides |
 | --- | --- |
-| `copilot-widget` | `CopilotProvider`, `useCopilot`, `useCopilotActivity`, `useCopilotContext`, core types |
-| `copilot-widget/server` | `createTokenHandler` (Next.js), `createTokenMiddleware` (Express), `generateToken` |
-| `copilot-widget/web-component` | `<copilot-widget>` custom element (batteries-included, for non-React pages) |
+| `@frikkdev/copilot-widget` | `CopilotProvider`, `useCopilot`, `useCopilotActivity`, `useCopilotContext`, core types |
+| `@frikkdev/copilot-widget/server` | `createTokenHandler` (Next.js), `createTokenMiddleware` (Express), `generateToken` |
+| `@frikkdev/copilot-widget/web-component` | `<copilot-widget>` custom element (batteries-included, for non-React pages) |
 
 ### Reference Components (you own these)
 
@@ -84,14 +84,14 @@ These live in the `examples/` directory as templates. Copy the one you need into
 **Next.js App Router** (`app/api/copilot/token/route.ts`):
 
 ```ts
-import { createTokenHandler } from "copilot-widget/server";
+import { createTokenHandler } from "@frikkdev/copilot-widget/server";
 export const POST = createTokenHandler({ secret: process.env.COPILOT_SECRET! });
 ```
 
 **Express:**
 
 ```ts
-import { createTokenMiddleware } from "copilot-widget/server";
+import { createTokenMiddleware } from "@frikkdev/copilot-widget/server";
 app.post("/api/copilot/token", createTokenMiddleware({ secret: process.env.COPILOT_SECRET! }));
 ```
 
@@ -102,7 +102,7 @@ app.post("/api/copilot/token", createTokenMiddleware({ secret: process.env.COPIL
 Copy `examples/nextjs-standard/app/components/ChatWidget.tsx` into your project, then:
 
 ```tsx
-import { CopilotProvider } from "copilot-widget";
+import { CopilotProvider } from "@frikkdev/copilot-widget";
 import { ChatWidget } from "./components/ChatWidget"; // your copy
 
 function App() {
@@ -125,7 +125,7 @@ function App() {
 Copy `examples/nextjs-composer/app/components/CopilotComposer.tsx` into your project, then build your own UI using WebChat hooks:
 
 ```tsx
-import { CopilotProvider, useCopilot } from "copilot-widget";
+import { CopilotProvider, useCopilot } from "@frikkdev/copilot-widget";
 import { CopilotComposer } from "./components/CopilotComposer"; // your copy
 import { hooks } from "botframework-webchat";
 
